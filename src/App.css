@@ -1,42 +1,43 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* Define CSS variables for colors */
+:root {
+  --primary-color: #DFF3E4;
+  --secondary-color: #7180B9;
+  --tertiary-color: #3423A6;
+  --quaternary-color: #2E1760;
+  --background-color: #171738;
+}
+
+/* Use the CSS variables in your styles */
+body {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+}
+
+.button {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.nav-tabs .nav-link.active {
+  color: var(--primary-color);
+  background-color: var(--background-color);
+  border-color: var(--primary-color) var(--primary-color) var(--background-color);
+}
+
+
+.footer {
+  background-color: var(--secondary-color);
+  color: white;
   text-align: center;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 10px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
