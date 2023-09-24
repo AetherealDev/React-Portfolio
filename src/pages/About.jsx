@@ -1,22 +1,22 @@
 import Ziggy from '../assets/ziggy.svg';
 
 export default function About() {
-    const containerStyle = {
-        display: 'flex',
-        alignItems: 'center', // Vertically align the content
-    };
-
-    const imageStyle = {
-        maxHeight: '200px',
-        display: 'inline',
-        borderRadius: '50%', // Make the image circular
-        marginRight: '20px', // Add some spacing between the image and text
-    };
+    // const containerStyle = {
+    //     display: 'flex',
+    //     alignItems: 'center', // Vertically align the content
+    // };
+    //
+    // const imageStyle = {
+    //     maxHeight: '200px',
+    //     display: 'inline',
+    //     borderRadius: '50%', // Make the image circular
+    //     marginRight: '20px', // Add some spacing between the image and text
+    // };
 
     return (
-        <div className="about row h-100 justify-content-center align-items-center">
-            <div style={containerStyle}>
-                <img src={Ziggy} alt="Ziggy" style={imageStyle} />
+        <div className="about d-flex align-items-center justify-content-center" style={{ minHeight: '80vh' }}>
+            <div>
+                <img src={Ziggy} alt="Ziggy" style={{maxHeight: '200px'}}/>
                 <div>
                     <h1>About</h1>
                     <p>My name is Ethan Siewny, I'm a full-stack web developer.</p>

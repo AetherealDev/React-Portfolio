@@ -14,7 +14,7 @@ export default function Footer() {
             </div>
             <br/>
             <button className="btn btn-dark">
-                <a href={githubLink} target="_blank" rel="noopener noreferrer">
+                <a href={githubLink}  rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faGithub} /> GitHub
                 </a>
             </button>
