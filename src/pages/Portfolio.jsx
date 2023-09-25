@@ -3,8 +3,9 @@ import Card from "../components/Card.jsx";
 export default function Portfolio() {
     return (
         <>
-            <h1>Portfolio</h1>
-            <div style={{ display: "flex", flexWrap: "wrap" }}>
+            <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
+                <h1 style={{ marginTop: "20px" }}>Portfolio</h1>
+            <div className="d-flex align-items-center justify-content-center" style={{ display: "flex", flexWrap: "wrap", minHeight: '80vh' }}>
                 <Card
                     src="https://cdn2.iconfinder.com/data/icons/flat-seo-web-ikooni/128/flat_seo2-03-512.png"
                     alt="Logo"
@@ -47,6 +48,7 @@ export default function Portfolio() {
                     text="Simple ECommerce Backend"
                     github="https://github.com/AetherealDev/ExpressCart"
                 />
+            </div>
             </div>
         </>
 

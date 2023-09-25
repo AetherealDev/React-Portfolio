@@ -15,8 +15,8 @@ export default function Contact() {
 
     return (
         <>
-            <h1>Contact</h1>
             <div className="container">
+                <h1>Contact</h1>
                 <form id="contact-form" noValidate>
                     {/* Add the "noValidate" attribute to prevent browser validation */}
                     <div className="mb-3">

@@ -11,7 +11,7 @@ export default function Resume() {
     ).toString();
 
 
-    const pdfUrl = 'https://cdn1.frocdn.ch/rrhLKfaDXssAKUd.pdf';
+    const pdfUrl = 'https://raw.githubusercontent.com/AetherealDev/React-Portfolio/main/public/resume.pdf';
 
     const handleDownload = () => {
         // Create an invisible anchor element and trigger a click event to start the download.
@@ -27,11 +27,14 @@ export default function Resume() {
 
 
     return (
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
+            <h1 style={{ marginTop: "20px" }}>Resume</h1>
         <div style={{ width: '25%', height: '50%' }}>
             <Document file={pdfUrl}>
                 <Page pageNumber={1} />
             </Document>
             <button className="btn btn-primary" onClick={handleDownload}>Download Resume</button>
         </div>
+            </div>
     );
 }
