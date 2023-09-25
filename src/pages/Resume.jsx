@@ -1,4 +1,3 @@
-import ResumeDoc from '../assets/Resume.pdf';
 import { Document, Page } from 'react-pdf';
 import { pdfjs } from 'react-pdf';
 import 'react-pdf/dist/Page/AnnotationLayer.css';
@@ -29,7 +28,7 @@ export default function Resume() {
 
     return (
         <div style={{ width: '25%', height: '50%' }}>
-            <Document file={ResumeDoc}>
+            <Document file={pdfUrl}>
                 <Page pageNumber={1} />
             </Document>
             <button className="btn btn-primary" onClick={handleDownload}>Download Resume</button>
